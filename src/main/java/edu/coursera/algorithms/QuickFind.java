@@ -1,8 +1,5 @@
 package edu.coursera.algorithms;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 public class QuickFind {
 
     private static final int[] id = new int[10];
@@ -24,9 +21,12 @@ public class QuickFind {
         quickFind.union(9, 4);
 
         for (int i = 0; i < 10; i++) {
-            System.out.print(id[i]+" ");
+            System.out.print(id[i] + " ");
         }
-        System.out.print(quickFind.find(7, 1));
+        System.out.println();
+        System.out.println(quickFind.find(7, 1));
+        System.out.println(quickFind.find(0, 4));
+        System.out.println(quickFind.find(0, 3));
 
 
     }
